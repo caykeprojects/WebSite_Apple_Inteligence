@@ -7,7 +7,7 @@
      font-family: 'Poppins', sans-serif;
  }
 
-  /*Animação intro  */
+ /*Animação intro  */
 
  .intro {
      position: fixed;
@@ -31,13 +31,13 @@
      animation-name: introducao;
      animation: introducao 2s linear infinite;
      width: 120px;
-    height: 120px;
-    overflow: hidden;
+     height: 120px;
+     overflow: hidden;
  }
 
- .intro .logo{
-    animation-name: aparecer;
-    animation: aparecer 2s linear infinite;
+ .intro .logo {
+     animation-name: aparecer;
+     animation: aparecer 2s linear infinite;
  }
 
  @keyframes desaparecer {
@@ -51,7 +51,7 @@
 
      100% {
          opacity: 0;
-        
+
      }
 
  }
@@ -72,101 +72,142 @@
 
  @keyframes aparecer {
      from {
-        opacity: 0;
-    }
+         opacity: 0;
+     }
 
      to {
-        opacity: 1;
-        transform:
-        translateY(0)
-        translateX(0);
+         opacity: 1;
+         transform:
+             translateY(0) translateX(0);
 
      }
  }
 
- .loading{
 
-    width: 50px;
-    height: 50px;
-    border: 5px solid #444;
-    border-top: 5px solid white;
-    border-radius: 50%;
-    animation: girar 1s linear infinite;
-}
+ @keyframes girar {
 
-@keyframes girar{
+     from {
+         transform: rotate(0deg);
+     }
 
-    from{
-        transform: rotate(0deg);
-    }
+     to {
+         transform: rotate(360deg);
+     }
 
-    to{
-        transform: rotate(360deg);
-    }
-
-}
+ }
 
 
-/*Cabeçalho*/
+ /*Cabeçalho*/
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background: #44444402;
-}
+ header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+     background: #44444402;
+ }
 
 
-header ul {
-    display: flex;
-    justify-content: space-around;
-    gap : 120px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    outline: none;
-    list-style: none;
-    color: white;
-}
+ header ul {
+     display: flex;
+     justify-content: space-around;
+     gap: 120px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 30px;
+     outline: none;
+     list-style: none;
+     color: white;
+ }
 
-.lista-cabecalho li a{
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
+ .lista-cabecalho li a {
+     color: white;
+     text-decoration: none;
+     transition: all 0.3s ease;
+     display: inline-block;
+ }
 
-.lista-cabecalho li a:hover{
-    transform: translateY(-10px) scale(1.1);
-    letter-spacing: 2px;
-}
+ .lista-cabecalho li a:hover {
+     transform: translateY(-10px) scale(1.1);
+     letter-spacing: 2px;
+ }
 
-.logo{
+ .logo {
 
-    transition: all 0.3s ease;
-}
+     transition: all 0.3s ease;
+ }
 
-.logo:hover{
-    transform: translateY(-10px) scale(1.1);
-    letter-spacing: 2px;
-}
+ .logo:hover {
+     transform: translateY(-10px) scale(1.1);
+     letter-spacing: 2px;
+ }
 
-.botao-comece{
-    padding: 20px;
-    border: 10px solid;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #ff0066, #7b2cff);
-    cursor: pointer;
-    font-size: 25px;
-    transition: all 0.3s ease;
-}
+ .botao-comece {
+     padding: 20px;
+     border: 10px solid;
+     border-radius: 30px;
+     background: linear-gradient(90deg, #ff0066, #7b2cff);
+     cursor: pointer;
+     font-size: 25px;
+     transition: all 0.3s ease;
+ }
 
-.botao-comece:hover{
-    transform: translateY(-10px) scale(1.1);
-    letter-spacing: 2px;
-    background: linear-gradient(90deg,#01648c #7b2cff, #ff0066);
-}
+ .botao-comece:hover {
+     transform: translateY(-10px) scale(1.1);
+     letter-spacing: 2px;
+     background: linear-gradient(90deg, #01648c #7b2cff, #ff0066);
+ }
 
-body{
-    background-color: #000;
-}
+ body {
+     background-color: #000;
+ }
+
+ .Sessao-principal {
+     min-height: calc(100vh - 160px);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 40px;
+     padding: 100px 20px 20px;
+ }
+
+ .imagem-principa1 {
+
+     width: 50%;
+     animation: flutuar 4.9s ease-in-out infinite;
+
+ }
+
+ .imagem-principa2 {
+     max-width: 500px;
+     width: 100%;
+     height: auto;
+     }
+
+ .imagem-principa2 {
+     animation: flutuar 5s ease-in-out infinite;
+ }
+
+ @keyframes flutuar {
+     0% {
+         transform: translateY(-20px);
+     }
+
+     50% {
+         transform: translateY(20px);
+     }
+
+     100% {
+         transform: translateY(-20px);
+     }
+ }
+
+ .subtitulo-principal {
+     font-size: 24px;
+     color: #fff;
+     text-align: center;
+     max-width: 600px;
+     animation: flutuar 5.1s ease-in-out infinite;
+     text-justify: 10px;
+     font-size: 30px;
+ }
