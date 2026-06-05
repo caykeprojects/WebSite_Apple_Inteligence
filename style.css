@@ -143,7 +143,7 @@
 
  .botao-comece {
      padding: 20px;
-     border: 10px solid;
+     border: none;
      border-radius: 30px;
      background: linear-gradient(90deg, #ff0066, #7b2cff);
      cursor: pointer;
@@ -158,7 +158,7 @@
  }
 
  body {
-     background-color: #000;
+     background: linear-gradient(135deg, #070707 0%, #1d1d1f 100%);
  }
 
  .Sessao-principal {
@@ -182,7 +182,7 @@
      max-width: 500px;
      width: 100%;
      height: auto;
-     }
+ }
 
  .imagem-principa2 {
      animation: flutuar 5s ease-in-out infinite;
@@ -210,4 +210,60 @@
      animation: flutuar 5.1s ease-in-out infinite;
      text-justify: 10px;
      font-size: 30px;
+ }
+
+ .sessao-sobre {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .sobre-texto {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
+     text-justify: 10px;
+     gap: 20px;
+ }
+
+ .titulo-sobre {
+     font-size: clamp(2.5rem, 4vw, 4rem);
+     background: linear-gradient(90deg, #ff0066, #7b2cff, #00d8ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+
+ }
+
+ .descricao-sobre {
+
+     color: #fff;
+     font-size: 40px;
+     letter-spacing: 0.1px;
+     text-align: justify;
+     max-width: 1100px;
+ }
+
+ .video-apple {
+     width: 500px;
+     object-fit: cover;
+     object-position: center 20%;
+     border-radius: 150px;
+    animation: flutuar 5.2s ease-in-out infinite;
+    
+ }
+
+ /*Sessao recursos*/
+
+ .sesssao-recursos {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     gap: 40px;
  }
