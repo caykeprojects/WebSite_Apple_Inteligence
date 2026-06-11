@@ -252,18 +252,72 @@
      object-fit: cover;
      object-position: center 20%;
      border-radius: 150px;
-    animation: flutuar 5.2s ease-in-out infinite;
-    
+     animation: flutuar 5.2s ease-in-out infinite;
+
  }
 
  /*Sessao recursos*/
 
- .sesssao-recursos {
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     align-items: center;
-     flex-direction: column;
-     gap: 40px;
+ .sessao-recursos {
+     height: 150vh;
+     overflow: hidden;
  }
+
+ .titulo-Recursos {
+     display: flex;
+     justify-content: center;
+     font-size: clamp(2.5rem, 4vw, 4rem);
+     background: linear-gradient(90deg, #ff0066, #7b2cff, #00d8ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     padding: 90px;
+
+ }
+
+ .container-cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     place-items: center;
+     gap: 20px;
+
+ }
+
+ .card {
+     background-color: #1d1d1f;
+     width: 600px;
+     height: 750px;
+     border-radius: 20px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease;
+     
+ }
+ 
+ .card-txt{
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 4px;
+     color: #fff;
+     font-size: 30px;
+     text-align: justify;
+     text-align: center;
+     margin-top: 20px; 
+ }
+
+ .card img{
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+ }
+
+ .card:hover{
+    transform: translateY(-10px);
+    border-radius: 2px solid #ffff;
+ }
+
+
+
